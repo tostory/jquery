@@ -1,5 +1,0 @@
-upload=C:/a01_prog/eclipse/workspace_server/springweb/WebContent/z02_upload/
-driver=oracle.jdbc.driver.OracleDriver
-dbserver=jdbc:oracle:thin:@192.168.0.101:1521:ORCL11
-name=scott
-pass=tiger
