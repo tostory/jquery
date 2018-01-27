@@ -1,0 +1,51 @@
+질문 1.익명함수랑 이름있는함수의 차이점
+
+var point = function(){};
+function point(){}
+랑 두개 차이가 뭐에요?? 어차피 호출할때 pont(); 해야하는데...
+
+
+
+질문2. window.onload=function()
+
+setTimeout(function () {
+        	//document.write("5초지남")
+        	document.body.innerHTML = "<h1>안녕???</h1>";
+        }, 5000)
+        
+ 이렇게만 해도 뜨는데 window.onload();를 쓰는 이유는 머에요??
+ 
+ 
+window.onload=function() {        
+        var favorateCars = [];
+            favorateCars.push({name:"카니발2", cc:"3000", hsp:"160km/h", z100:"10초"});
+            favorateCars.push({name:"누렁이", cc:"1800", hsp:"240km/h", z100:"6초"});
+            favorateCars.push({name:"스파크", cc:"1000", hsp:"140km/h", z100:"12초"});
+
+            for( var i in favorateCars){
+               //alert("<h1>" + favorateCars[i].name + favorateCars[i].cc + favorateCars[i].hsp + favorateCars[i].z100 + "</h1>");
+               document.body.innerHTML = "<h1>" + favorateCars[i].name + favorateCars[i].cc + favorateCars[i].hsp + favorateCars[i].z100 + "</h1>";
+            }
+}
+여기서는 window.onload=function()을 안 넣으면 오류나는데 왜 윗쪽setTimeout이랑 틀린가요?? 
+
+질문3.제가 일하면서 만든게 있는데 저 아래 클래스 바꾸는거 for문으로 돌릴수 있을거 같은데 모르겠어서 질문드립니다.
+
+<script type="text/javascript">
+	$('.gnb > li > a').click(function(){
+		$('.gnb > li > ul').hide();
+		$(this).next('ul').show();		
+	});
+	$('.gnb > li:nth-child(1) > a').click(function(){
+		$('.gnb-color').removeClass('gnb-navy gnb-blue gnb-purple gnb-mint').addClass('gnb-navy');		
+	});
+	$('.gnb > li:nth-child(2) > a').click(function(){
+		$('.gnb-color').removeClass('gnb-navy gnb-blue gnb-purple gnb-mint').addClass('gnb-blue');		
+	});
+	$('.gnb > li:nth-child(3) > a').click(function(){
+		$('.gnb-color').removeClass('gnb-navy gnb-blue gnb-purple gnb-mint').addClass('gnb-purple');		
+	});
+	$('.gnb > li:nth-child(4) > a').click(function(){
+		$('.gnb-color').removeClass('gnb-navy gnb-blue gnb-purple gnb-mint').addClass('gnb-mint');		
+	});	
+</script>
