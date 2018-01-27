@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var list=[];
+	// 배열에서, 객체를 담아서 처리하는 내용.!!
+	list.push({name:"사과",price:3000, cnt:100});
+	list.push({name:"바나나",price:4500, cnt:80});
+	list.push({name:"딸기",price:12000, cnt:30});
+	alert(list.length);
+	// for 문을 활용해서 연산된 총계값을 출력하고자 한다..
+	var tot=0;
+	for(var idx in list){
+		tot+=list[idx].price*list[idx].cnt;
+	}
+	alert("총 합산의 결과값은 "+tot);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

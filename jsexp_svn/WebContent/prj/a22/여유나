@@ -1,0 +1,34 @@
+안녕하세요. 여유나입니다.
+저는 웹퍼블리셔고, 자바스크립트는 초급정도의 레벨입니다.
+
+## 사전평가 1
+1. 태그,속성,변수
+2. div/span
+3. ul은 의미없는 목록작성에 사용,ol은 순위부여 목록작성에 사용
+4. 링크의 이동 
+5. src=""
+6. 열 셀 병합
+7. 해당 input의 행위를 지정
+8. 화면에서 보여지는 input의 텍스트지정
+9. radio는 한가지 선택,cehckbox는  다중선택
+10.
+11. text-?:uppercase
+12. table{border-collapse:collapse;border:1px solid #000;}
+13. {float:left;}혹은{display:inline-block;}
+14. margin:컨텐츠 외부영역 값 조절/ padding:컨텐츠 내부영역 값 조절
+15. 기기에 상관없이 어느 화면에서나 자연스럽게 이어지는 웹화면
+16. 인라인선언,내부선언,링크선언
+17. 
+18. <img src="" alt="test" />
+19. 
+20. 공백
+
+## 사전평가 2
+2.console.log("text");
+3.var person;
+4.var name=[];
+6. 실행하다가 break에서 빠져나옴, continue를 만나면 계속실행
+8. attr="";
+19. push들어가는것에 해당하는 것 pop나오는것에 해당하는 것
+
+맨 뒷자리라 목소리가 잘 안들려요. 마이크 사용이 가능하다면 사용해주셨으면 좋겠습니다.

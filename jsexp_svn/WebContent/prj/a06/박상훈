@@ -1,0 +1,50 @@
+안녕하세요 ..
+본강의 수강생 박상훈입니다.
+저는 GUI디자이너이고, 자바스크립트는 초급정도 레벨입니다. 
+
+##사전평가 html
+1. doctype, html, body 
+2. div , span
+3. ul 은 순서가 상관없는 리스트 일때  ol은 순서가 상관있는 리스트 일때 넘버로 매겨짐
+4. 특정 URL로 이동하는 기능
+5. src=""
+6. 하단에 있는 td와 합침
+7. 해당 폼이 적용되는 주소
+8. 인풋에 포커스 전 안내 맨트를 적용 하거나 특정 글씨를 적용
+9. 체크박스는 하나로 쓰이거나 다중으로 선택가능 라디오는 여러개 중 하나만 선택가능
+10. 프레임의 속성을 컨트롤 
+11. text-transform:uppercase;
+12. table, th, td{border-collapse:collapse; border:1px solid #000;}
+13. display:inline-block; float:left;
+14. margin은 요소간에 거리 즉 여백을 말함 ,padding은 선택 요소의 두깨를 말한다.
+15. 다양한 디바이스 반응하여 컨텐츠의 구성을 바꾸거나 위치를 조정하여 대응가능 하도록 하는 것을 말한다.
+16.id를 이용 #di{} .class를 이용 .class{}, 요소를 이용 div{} 나 p{}를 이용
+17. :nth-child(odd){} , :nth-child(even){} 
+18. @media max-width(1024px){.img{background:url(images/design1.png);}}@media max-width(768px){.img{background:url(images/design2.png);}}
+19. <map name="primary"><area shape="circle" coords="75,75,75" href="left.html" alt="Click to go Left"><area shape="circle" coords="275,75,75" href="right.html" alt="Click to go Right"></map>
+	<img usemap="#primary" src="http://placehold.it/350x150" alt="350 x 150 pic">
+20. 한칸 여백 넣기
+
+##사전평가 javascript
+
+1.
+2.
+3.
+4.
+5.
+6.
+7..perant();
+8. attr();
+9.
+10.
+11.
+12.
+13.
+14.
+15.안전한 코딩을 위한 가이드라인 
+16.
+17.setInterval 기본동작이 반복적으로 일어남 setTimeout 초기에 한번만 일어남 
+18.
+19.
+20.
+

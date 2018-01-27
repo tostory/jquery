@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload=function(){
+		function Product(name, price, cnt){
+			this.name=name;
+			this.price=price;
+			this.cnt = cnt;
+		}
+		Product.prototype.tot=function(){
+			return this.price*this.cnt;
+		}
+		var prodList=[];
+		prodList.push(new Product("사과",3000,2));
+		prodList.push(new Product("바나나",4000,3));
+		prodList.push(new Product("오렌지",3500,5));
+		prodList.push(new Product("복숭아",5000,1));
+		alert("물건명(초기 리스트)");
+		for(var idx in prodList ){
+			document.body.innerHTML+="<h1>"+(parseInt(idx)+1)+")"+
+				prodList[idx].name+"</h1>";
+		}
+		prodList.sort();
+		alert("물건명(sort()후-물건명)");
+		for(var idx in prodList ){
+			document.body.innerHTML+="<h1>"+(parseInt(idx)+1)+")"+
+				prodList[idx].name+"</h1>";
+		}	
+		// 객체단위를 배열에서 특정한 속성값을 기준으로 정렬 처리시,
+		//  넘겨지는 데이터를 function(obj1, obj2) 객체 단위로 넘겨지고.
+		prodList.sort(function(obj1, obj2){
+			// 객체 안에 특정한 속성값을 기준으로 정렬을 처리 할 수 있다.
+			return obj1.price-obj2.price;
+		});
+		alert("물건명(sort()후-가격)");
+		for(var idx in prodList ){
+			document.body.innerHTML+="<h1>"+(parseInt(idx)+1)+")"+
+				prodList[idx].name+":"+prodList[idx].price+"</h1>";
+		}		
+		// 총계값을 기준으로 정렬처리..
+		prodList.sort(function(obj1, obj2){
+			return obj1.tot()-obj2.tot();
+		});
+		alert("물건명(sort()후-총계)");
+		for(var idx in prodList ){
+			document.body.innerHTML+="<h1>"+(parseInt(idx)+1)+")"+
+				prodList[idx].name+":"+prodList[idx].tot()+"</h1>";
+		}			
+	};
+
+	
+	
+	
+	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

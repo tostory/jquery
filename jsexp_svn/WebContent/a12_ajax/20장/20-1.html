@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <script>
+// ajax에서 활용된느  XMLHttpRequest 객체 호출..
+	
+
+    </script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    // body부분까지 로딩 후, 호출될 내용!!
+    	$(document).ready(function(){
+		//   jax에서 활용된느  XMLHttpRequest 객체 호출..
+			var xhr;
+			// 브라우저별로 XMLHttpRequest객체를 호출..
+			if( window.XMLHttpRequest ){
+				xhr = new XMLHttpRequest();
+			//  익스플로러에서 ajax객체..	
+			}else if( window.ActiveObject ){
+				xhr = new ActiveObject("Msxml2.XMLHTTP");
+			}else{
+				throw new Error("Ajax를 지원하지 않는 브라우저 입니다!");
+			}
+    		//alert(xhr);
+    		
+    	});
+    </script>    
+    
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        window.onload = function () {
+            // 문서 객체를 가져옵니다.
+            var willRemove = document.getElementById('will-remove');
+
+            // 문서 객체를 제거합니다.
+            // 상위객체.removeChild(하위객체) : 
+            // 상위객체가 포함 하위객체를 삭제를 처리할 수 있다.
+            document.body.removeChild(willRemove);
+        };
+    </script>
+</head>
+<body>
+    <h1 id="will-remove">Header1</h1>
+    <h1 id="will-remove2">Header2</h1>
+    <h1 id="will-remove3">Header3</h1>       
+</body>
+</html>

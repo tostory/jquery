@@ -1,0 +1,54 @@
+안녕하세요 저는 위성식입니다.
+
+현재 퍼블리셔로 근무하고 있고 자바스크립트는 초급수준입니다.
+
+## 사전평가 1
+1. <html></html>,<head></head>,<body></body>
+2. <div></div>,<span></span>
+3. ul 은 순서가 정의되지 않는 리스트이고 ol은 순서가 정의된 리스트입니다.
+4. a 태그의 href속성은 다른페이지로의 이동을 위한 링크연결입니다.
+5. src
+6. rowspan은 y축의 공간을 합치는 것입니다.
+7. action 속성은 해당 form의 용도를 결정하는 것입니다.
+8. placeholder는 인풋태그의 사용용도 설명하는데 사용합니다.
+9. radio는 x/y를 체크하고 checkbox는 여러가지 조건을 선택하는데 사용됩니다.
+10. 
+11. upercase
+12. border-collapse:collapse;
+13. float:left(right)
+14. margin은 element 바깥으로의 간격  padding는 element 안쪽으로의 여백 
+15. 반응형웹은 어떠한 기기에서 접속을 하여도 사용자가 불편하지 않도록 레이아웃을 변경시켜서 보여주는 디자인 입니다.
+16. Selector / property / value
+17. :odd, :even
+18.
+19. <map name="">
+	  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+	  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+	  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+	</map>
+20. &nbsp;(스페이스바 1칸)
+
+## 사전평가 2
+1. onclick="location.href=''"
+2. console.log
+3. var person = person
+4. var names = [a,b,c,d]
+5. var title01 = document.getElement.TagName(h1);
+6. break는 선언된 시점에서 반복문을 끝내고 continue는 선언된 시접에서 다시 시작시킴
+7. window.open()
+8.
+9.
+10.
+11.
+12.
+13.
+14. . var d = new Date(+3)
+15.
+16.
+17. setInterval은 지금시점부터 설정된 기간만큼의 시간 setTimeout은 현재시간부터 설정된 시간까지...
+18.
+19.
+20. ㅇ 웹 브라우저 기능 요소를 직접 관리/제어할 수 있는 특별한 객체 모음
+     - 브라우저 제작사 마다 세부사항이 다소 다르게 구현. 따라서, 한정적 사용이 바람직.
+  	ㅇ 자바 스크립트에서는, 
+     - 이를 전역 객체(Global Object)로써 사용할 수 있음. `자바 스크립트 Window 객체` 라고도 함

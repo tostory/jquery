@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').each(function () {
+            	// is(.클래스 속성) : 해당 클래스 속성이 있으면 조건true/false
+            	// 그 속성에 따라 처리할 내용..
+                if ($(this).is('.select')) {
+                    $(this).css('background', 'orange');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 class="select">Header-0</h1>
+    <h1>Header-1</h1>
+    <h1 class="select">Header-2</h1>
+</body>
+</html>

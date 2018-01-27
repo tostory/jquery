@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//  함수형 객체 만들기..
+//1. MonthSche 
+//    속성 : 월표시, 년도, 마지막날, 시작요일
+//	   메서드1:  @@@년도 @@월 달력입니다!! alert()으로 출력
+//   생성자를 객체 호출과 메서드1처리..
+	function MonthSche(mon,year, lastDate, startDay){
+		this.mon=mon;
+		this.year=year;
+		this.lastDate=lastDate;
+		this.startDay=startDay;
+		this.show = function(){
+			alert(this.year+"년도 "+this.mon+"월 달력입니다!");
+		}
+	}
+	var jan =new MonthSche(1,2018,31,"월");
+	jan.show();
+</script>
+</head>
+<body>
+
+</body>
+</html>

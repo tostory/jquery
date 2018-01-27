@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 생성자 함수를 선언합니다.
+        function Rectangle(w, h) {
+            // 변수를 선언합니다.
+            var width = w;
+            var height = h;
+
+            // 메서드를 선언합니다.
+            this.getWidth = function () { return width; };
+            this.getHeight = function () { return height; };
+            this.setWidth = function (w) {
+                width = w;
+            };
+            this.setHeight = function (h) {
+                height = h;
+            };
+        }
+        var rec01 = new Rectangle(5,7);
+        // 인캡슐화 : 프로그램밍의 안정적인 데이터 변수 활용을 위해.
+        // 지정된 메서드로만 데이터를 접근하고, 그외 직접적인 접근을
+        // 차단하는 것을 말한다. oop의 핵심개념 중에 하나이다..
+        //rec01.width=25;
+        alert(rec01.getWidth()*rec01.getHeight());
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

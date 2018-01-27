@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    	window.onload=function(){
+            var output = '';
+            for (var key in window) {
+            	// window 가 브라우저가 로딩되었을 활용되는 내장 객체..
+            	// key: 속성,  window[key]: 속성값
+                output += '●' + key + ': ' + window[key] + '<br>';
+            }   		
+    		document.body.innerHTML=output;
+    	};
+        // 출력합니다.
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

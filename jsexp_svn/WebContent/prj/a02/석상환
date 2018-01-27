@@ -1,0 +1,58 @@
+안녕하세요
+본강의 학생입니다.
+저는 웹퍼블리셔이고,
+자바스크립트는 초급
+정도 레벨입니다
+
+html문제
+1. h1~h6, p, a
+2. 블록형식 div, 인라인형식 a
+3. ul은 순서가 없는 목록이고, ol은 순서가 있는 목록이다
+4. url 이동 , javascript 실행, 파일경로 이동 및 다운로드
+5. src
+6. 같은 줄의 셀 병합을 의미한다
+7. php파일에 동작을 불러와 실행시킨다
+8. input태그의 글씨 표기를한다 예를 들어 '아이디'표기를 할 수 있다
+9. radio는 한개 체크이며 checkbox 중복체크에 쓰인다
+10. iframe의 창에 표시를 위해쓴다
+11.text-transform:uppercase;
+12. table, th, td{border:1px solid #000;}
+13. display : inline-block or display: inline or float:left;
+14. 요소 밖의 공간은 margin, 요소 안의 공간은 padding 정의 한다
+15. 사용자 디바이스에 따라 웹페이지가 반응하여 해상도에 맞게 반응한다
+16. link로 선언, html파일에 선언, 태그안에 인라인스타일로 선언
+17. 짝수는 even으로 홀수는odd로 지정하여 색을 지정한다
+18. midia qurey () and() {image{}}
+19.
+20. 공백을 표시한다.
+
+javascript문제
+1.<script scr="외부파일링크">< /scirpt>
+2.console.log(alert 및 각종 메소드 체크);
+3.
+4.
+5.
+6. break는 반복뭉네서 조건이있는 상태에서 브레이크가 걸리면 멈추고 continue는 멈추훈 다음 동작부터 실행이된다
+7. 
+8. (해당 element).text('변경키워드')
+9. 
+10. <iframe src="a1_con.html"></iframe>
+11. 난수
+12.
+13.
+14. d()+3
+15. 유저 문자
+16. var name_f = ["name1","name2","name3"] alert(name_f)  for(i=0; i>2;, i++){
+	  alert(name_f)
+	 }
+	 
+17. setinterval은 일정시간으로 계속 동작이되고 settimeout은 일정시간이되면 조건이 끝난다
+18.
+19.push는 element 합체 시키고 pop는 element에 마지막을 삭제한다
+20.윈도우를 제어하기위한 객체모델
+
+
+이렇게 시험을 막상보니 헷갈리는게 많네요 실무에서는 그냥 쓰다보니 뜻을 모르고 쓰는게 많아서
+그런지 공백이 많습니다 앞으로 한달간 좋은 수업 부탁드리겠습니다. 수업을 신청한건 모션적인거를 
+더 많이 실무에 적용시키고 싶어서 이렇게 신청하였습니다
+아직까지는 불편사항이 없지만 있다면 바로 건의 하겠습니다 잘 부탁드립니다 

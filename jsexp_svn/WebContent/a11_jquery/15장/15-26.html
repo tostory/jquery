@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+        	// div에서 여러 html내용을 다르게 설정할 때..
+        	// 배열객체.html(function(index){ return ""})
+        	
+            $('div').html(function (index) {
+                return '<h1>Header-' + index + '</h1>';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

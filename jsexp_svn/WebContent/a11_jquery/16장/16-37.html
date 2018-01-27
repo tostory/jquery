@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+        	// 윈도에서 스크롤링시, 발생하는 이벤트 정의
+            $(window).scroll(function () {
+            	// scollTop() :스크롤 상단, 
+            	// .height() : 문서객체 크기 범위
+                var scrollHeight = $(window).scrollTop() + $(window).height();
+                var documentHeight = $(document).height();
+                // 해당 스크롤이 하단으로 위치를 되었을 추가적인 html코드를 처리..
+                if (scrollHeight == documentHeight - 200) {
+                    for (var i = 0; i < 10; i++) {
+                        $('<h1>'+i+'Infinity Scroll</h1>').appendTo('body');
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

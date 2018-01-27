@@ -1,0 +1,53 @@
+안녕하세요
+저는 웹퍼블리셔이고,
+자바스크립트는 초급정도 레벨입니다.
+
+##사전평가1
+1. header footer content
+2. div , span
+3. ul : 순서가없는 리스트 / ol : 순서가 있는 리스트
+4. a태그에 랜딩을 거는 기능
+5. src
+6. table 열 병합
+7. form으로 감싸고 있는 값을 전송
+8. input textbox에 예시로 문구를 넣을수있다.
+9. radio:선택지 중 하나만 선택 / checkbox : 선택지 중 다중선택
+10. 불러온 iframe의 제목을 넣을수있다.
+11. h1 { text-transform:uppercase; }
+12. tabel { border-collapse:collapse; border:1px solid #000; }
+13. li { float:left; }
+14. margin:여백을주면 높이,너비에 margin 값이 포함되지 않는다. / padding:여백을 주면 높이,너비에 padding 값이 포함된다.
+15. 디바이스의 화면 크기별로 화면이 유동적으로 반응하여 보여지는 디자인
+16. tag에 직접적으로 inline으로 선언하기 / html 내부에 선언하기 / html외부에서 선언하여 link로 연결하기
+17. table td:nth-child(even){ background-color:red; }  / td:nth-child(odd){ background-color:blue; }
+18. 
+19.<map name="">
+	<area shape="" coords="" href="" alt="" />
+   </map>
+20. 엔티티코드 띄어쓰기
+
+##사전평가2
+1. link, script src=""
+2. console.log()
+3. var person;
+4. var names = [] ;
+5. var title01 = $('h1');
+6.
+7.$(this);
+8.$('elements').text();
+9.
+10.<iframe src="a01_con.html"></iframe>
+11. 수가 아닌값
+12. var person = { name: , age: , loc: }
+13.
+14.var d = new Date() + 3
+15. 기본값
+16. var name = ['a','b','c'];
+	for(var i=0; i>3; i++){
+		alert(name[i]);
+	}
+17.setInterval : 일정시간마다 반복 / setTimeout 일정시간뒤에 실행
+18. var text =This is a paragraph;
+	$('body p').html(text);
+19. push 배열에 넣는거 , pop 마지막배열
+20. 브라우저 객체모델

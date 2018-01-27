@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function pythagoras(width, height) {
+            function square(x) {
+                return x * x;
+            }
+
+            return Math.sqrt(square(width) + square(height));
+        }
+ //  내부 함수란? 함수 내부에서 활용되는 고유 처리를 위해서 
+// 그 함수만이 가지고, 처리할 수 있게 하는 것을 말한다..
+		function calcu(pname, cnt){
+	 		function price(name){
+	 			var ret=0;
+	 			if(name=='커피'){
+	 				ret=3000;
+	 			}
+	 			if(name=='쥬스'){
+	 				ret=4000;
+	 			}	 	
+	 			return ret;
+	 		}
+	 		return price(pname)*cnt;
+        }
+ 		alert( calcu('커피',2 ) );
+        
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

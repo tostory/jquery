@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            // 이벤트를 연결합니다.
+            // onsubmit() : form 하위에 있는  element의 데이터를
+            // 지정한 경로의 서버에 전송할 때, submit버튼을 클릭시, 발생한다.
+            
+            document.getElementById('my-form').onsubmit = function () {
+            	// 함수에서 return하는 값이 false이면  전송을 중단..
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <form id="my-form">
+        <label for="name">이름</label><br/>
+        <input type="text" name="name" id="name" /><br/>
+        <label for="pass">비밀번호</label><br/>
+        <input type="password" name="pass" id="pass" /><br/>
+        <label for="pass-check">비밀번호 확인</label><br/>
+        <input type="password" id="pass-check" /><br/>
+        <input type="submit" value="제출" />
+    </form>
+</body>
+</html>

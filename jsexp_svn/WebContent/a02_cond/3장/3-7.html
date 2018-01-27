@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        // prompt() : 입력받는 데이터..
+        // Number() : 숫자로 전환 :연산처리가 가능..
+        var input = Number(prompt('숫자를 입력하세요.', '숫자'));
+
+        // 조건문
+        // 5%2 ==> 5/2  0,1 반복
+        //  %3 ==> 0,1,2
+        switch (input % 2) {
+            case 0:
+                alert('짝수입니다.');
+                break;
+            case 1:
+                alert('홀수입니다.');
+                break;
+            default:
+                alert('숫자가 아닙니다.');
+                break;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

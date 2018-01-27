@@ -1,0 +1,73 @@
+안녕하세요
+저는 퍼블리셔이고
+자바스크립트는 초급 
+정도 레벨
+
+1.html head body
+
+2.block-> p, inline -> img
+
+3. ul -> 순서가 없는 리스트, ol ->순서가 있는 리스트
+
+4.링크 이동
+
+5.<img src="" alt="" />
+
+6.가로 병합
+
+7.서버 소켓 통신
+
+8.input 태그에 ex)입력하세요
+
+9.radio  한개 체크  checkbox 여러개 체크
+
+10.?
+
+11.text-transform:uppercase
+
+12.table{border:1px solid #000;}
+
+13.text-align:center;  vertical-align: middle;}
+
+14.margin는 바깥영역 padding은 안쪽영역
+
+15.각 디바이스(피씨,모바일,테블릿) 에서 보여주는 디자인
+
+16. link, style
+
+17. table tr:nth-child(odd){background-color:#000;}, table tr:nth-child(even){background-color:#fff;}
+
+18. 이미지에 클래스 추가  <img src="" alt="" class="ex_img">,미디어쿼리 사용 이미지 비율 조절
+
+19.hef="" <-링크값변경 
+
+20.공백
+
+
+script
+
+1.script src 이용
+2.console.log('출력');
+
+3.var person = new Object();
+4.var names = [];
+
+5.var title01 = $("h1");
+
+6.break는 반복문에서 빠져나옴 continue->다음 반복문 진행
+7.
+8. elements.text();
+
+11.
+12.
+13.
+16.
+var name = ['이름1','이름2','이름3'];
+ 
+for( var i= 0;, i<name.length; i++ ){
+	console.log(name);
+}
+17.setinterva=>해당시간에 시작했을때 시작, setimeout=>해당시간이 되었을때 종료
+19.
+20.바이트 오브 마크
+

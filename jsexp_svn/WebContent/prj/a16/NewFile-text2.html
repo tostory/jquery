@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var str_age = prompt("나이를 입력하세요");
+	var age = Number(str_age);
+	var price_rate = function(){
+		          if(age>=8 && age<=18){
+						alert( "청소년 요금제 할인률 50%");
+				} else if ( age<8 || age>65 ){
+						alert( "요금 무료 할인율 100%");
+				} else {
+					alert("입장료 45000원 할인없음");
+				}
+	}
+	price_rate();
+			         
+</script>
+</head>
+<body>
+
+</body>
+</html>

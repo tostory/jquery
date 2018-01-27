@@ -1,0 +1,58 @@
+안녕하세요..
+웹개발자이고 자바스크립트는 초급?? 정도 레벨 입니다.
+
+기본설명, 기본예제 설명
+기본설명, 기본예제, 응용예제/응용예제풀이
+기본설명, 기본/응용예제/프로젝트 진행
+특별히 수업 진행에 요청사항/불편사항
+
+************
+기본설명, 기본/응용예제/프로젝트 진행를 희망합니다.
+************
+
+## 사전평가 1
+1 html, head, body
+2 table, b
+3 unorderlist, orderlist
+4 하이퍼링크 페이지 이동
+5 src
+6 td의 합침 (가로행의 merge)
+7 submit 의 target (url)
+8 hint 문구
+9 radio : 보통 한개의 항목만 선택할때, checkbox : 복수선택 가능
+10 document 접근시 참조
+11 ???
+12 ???
+13 ???
+14 margin : 바깥여백 , padding : 안쪽여백
+15 화면 사이즈에 구애 받지 않고 동적으로 UI가 최적화 되도록 하는 방식
+16 ???
+17 ???
+18 ???
+19 ???
+20 공백
+
+## 사전평가 2
+1 <script type="text/javascript" src="...."></script>
+2 console.log('로그 출력');
+3 var person = new Object();
+4 var names = [];
+5 var title01 = document.getElementsByTagName('h1');
+6 break : 반복문 감, continue : 다음 반복문 진행
+7 parent
+8 elements.text = '가나다라';
+9 ???
+10 href="a01_con.html" target="document.getElementsByName('frame01')"
+11 숫자여부 확인
+12 var person = {name : '이름', age : '나이', loc : '지역'} //json
+13 Object type인지 확인
+14 ???
+15 스크립트라고 인식하는 형식중의 하나
+16 var name = ['홍길동', '심청이', '이방원'];
+   for (var i = 0 ; i = < name.length() ; i++) {
+   	alert(name[i]);
+   	}
+17 setinterval : 주기, setTimeout : 시간
+18 ???
+19 push : insert, pop : delete
+20 ???

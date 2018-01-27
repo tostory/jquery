@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INDEX</title>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var header = document.createElement('h1');
+            var textNode = document.createTextNode('Hello DOM');
+
+            // 노드를 연결합니다.
+            // 상위객.appendChild(하위객체)
+            header.appendChild(textNode);
+            // 화면을 구성하는 document.body객체에 해당 객체를 할당..
+            document.body.appendChild(header);
+            var h2 = document.createElement("h2");
+            var title = document.createTextNode("안녕하세요!");
+            h2.appendChild( title );
+            document.body.appendChild(h2);
+            
+            
+            
+            
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

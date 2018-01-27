@@ -1,0 +1,84 @@
+1. 익명함수 내장형함수 차이..
+var fun01=function(){
+}; // 반드시 선언후에 호출
+function call(){
+
+
+
+} // 선언 위치 상관 없이 사용할 수 있다.
+2. 가변 인자 함수..
+함수의 인자값이 선언되어 있지 않더라도, 가변인자값을
+받는 객체에 의해서 가변인자를 배열로 입력받아 처리하는 것을
+말한다.
+function sumall(){
+  //arguments // 인자값을 배열로 받는 객체
+  var tot=0;
+   for(var idx=0;idx<arguments.length;idx++){
+   	 tot+=argument[idx]
+   }
+   return tot;
+}
+sumall(5,6,7);
+3.  setInterval(반복될 함수, 반복될 시간(1/1000)) :
+    setTimeout(한번수행할함수, 시간이후(1/1000) )
+4. 인코딩과 디코딩 함수.
+   http://  ip주소:8080/call.do?name=홍길동&age=25
+ 위와 같이 네트웍상 데이터를 전송할 요청값을 처리할 때, 인코딩통해서 한글을 처리하고,
+ 받을 때, 디코딩을 통해서 처리를 하는 것말하고, 여기에 필요한 함수가 인코딩/디코딩
+ 함수이다.
+encodeURL(url) : 최소한 문자만.. decodeURL(url)
+encodeURIComponent(url)  대부분 문자 인코딩
+decodeURIComponent(url)  대부분 문자 디코딩
+
+5.  parseInt("25원") : 정수만 25 로 숫자 전환 가능 
+     Number("25") : 실수/정수 반드시 숫자형 문자만 전환이 가능.
+6. 객체의 속성/속성값..
+	for( key in  person){
+	   key은 속성
+	   person[key] : 속성값
+	}
+7.  객체 속성의 추가  person.loc="서울"
+    객체 속성의  삭제  delete person.loc
+    
+8. 생성자함수
+function Person(){
+  this.name='홍길동';
+  this.call=function(){}
+}
+var p01 = new Person();
+9. prototype이란 메서드를  공유메모리 메서드를 선언할 수 있는 것을
+말하고, 각 객체가  reference로 만들지라도 공통된 메서드를 사용할 수 
+있기에 메모리 효율에 탁월하다.
+var p01 = new Person();
+var p02 = new Person();
+Person.prototype.getSum=function(){}
+10. var subjects= "국어^영어^수학".split("^")
+subjects[0] :"국어"
+
+12.  객체.sort(function(left,right){
+		return left-right;
+     })
+     객체의 속성을 이용해서 내림차순/오름차순으로 정렬처리.
+13.  배열객체.forEach(index, element, 대상배열){}     
+
+
+
+
+
+
+
+
+
+    	
+
+
+
+
+
+
+
+
+
+
+
+

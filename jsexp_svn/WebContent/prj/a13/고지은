@@ -1,0 +1,55 @@
+안녕하세요.
+저는 자바스크립트&제이쿼리 수업을 듣는 고지은입니다.
+저는 웹퍼블리셔 초급이고, 자바스크립트는 초급정도 레벨입니다.
+
+## 사전평가 1
+1.
+2.	블럭형식: <p></p>
+	인라인형식: <span></span>
+3.	ul은 나열식 리스트 구조 / ol은 숫자형태의 리스트구조
+4.	다른 페이지로의 이동 기능
+5.	<img src="" />
+6.	열병합
+7.	
+8.	input:text에서 인풋 란의 관련된 설명(웹접근성)
+9.	radio: 단일선택
+	checkbox: 복수선택가능
+10.	
+11.	
+12.	table, th, td{border: 1px solid #000;}
+13.	float:left
+14.	margin: 무엇인지는 알고있는데, 차이 개념을 정확히 설명하기가 어렵습니다.
+	padding: 무엇인지는 알고있는데, 차이 개념을 정확히 설명하기가 어렵습니다.
+15. 다양한 디바이스 크기에 따라 반응적으로 변하는 웹디자인
+16. 
+17.
+table tr:nth-child(even){background:red;}
+table tr:nth-child(odd){background:blue;}
+18.
+<img src="image1.jpg" class="pc">
+<img src="image3.jpg" class="mobile">
+??
+@media (max-width:785px){
+ .pc{display:none;}
+}
+@media (min-width:786px){
+ .mobile{display:none;}
+}
+19. <map name="#aaa">
+		<area target="" href="주소" cord="위치" />
+		<area target="" href="주소" cord="위치" />
+	</map>
+	<img src="경로" usemap="#aaa" />
+20. 한칸띄어쓰기
+
+## 사전평가 2
+1. <script type="text/javascript" src="경로"> </script>
+2.console.log("ddd");
+3.
+4.
+5.var title01=<h1></h1>
+6. break는 한번 돌고 멈추는 것이고 continue는 계속 진행하는것
+7. prompt();
+8.document.elementText(); ?? 흠.. 잘모르겠습니다.
+9.
+

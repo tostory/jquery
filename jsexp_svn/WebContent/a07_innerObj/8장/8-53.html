@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var object = {
+            name: '윤인성',
+            region: '서울특별시'
+        };
+        // JSON.parse(json형태의 문자열) : 자바스크립트 객체로 변환처리
+        var copy = JSON.parse(JSON.stringify(object));
+
+        // 출력합니다.
+        alert(copy.name + ' : ' + copy.gender);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

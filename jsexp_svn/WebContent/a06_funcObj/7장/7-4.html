@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Student(name, korean, math, english, science) {
+            // 속성
+            this.이름 = name;
+            this.국어 = korean;
+            this.수학 = math;
+            this.영어 = english;
+            this.과학 = science;
+
+            // 메서드
+            this.getSum = function () {
+                return this.국어 + this.수학 + this.영어 + this.과학;
+            };
+            this.getAverage = function () {
+                return this.getSum() / 4;
+            };
+            this.toString = function () {
+                return this.이름 + '\t' + this.getSum() + '\t' + this.getAverage();
+            };
+        }
+
+        var student = new Student('윤하린', 96, 98, 92, 98);
+        // 함수형 객체 만들기..
+        function Product(name, price){
+        	// 객체의 속성은 this.속성명 = 입력값;
+        	this.name = name;
+        	this.price = price;
+        	// 기능 메서드구현
+        	this.info =function(){
+        		alert(this.name+":"+this.price);
+        	}
+        }
+        // 함수형 객체를 호출할 때는 new 함수명()으로 생성한다.
+        var p01 = new Product("아이스크림",3000);
+        // 참조변수.속성
+        //alert(p01.name+"," +p01.price);
+        p01.info();
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

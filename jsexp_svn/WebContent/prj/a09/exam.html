@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*구구단*/
+		var show = '';
+		for(var i=2; i<10; i++){
+			show += "<div style='float:left;padding:0 10px;'><h1>"+i+"단</h1><br>"
+			for(var j=1; j<10; j++){
+				show += i+"*"+j+"="+(i*j)+"<br>";
+			}
+			show += "</div>";
+		}
+		document.body.innerHTML = show;
+	</script>
+	<script>
+		/*친구*/
+		var cnt = prompt("친구 수를 입력하세요");
+		var friends = [];
+		for(var cnt_idx=0; cnt_idx<cnt; cnt_idx++){
+			friends[cnt_idx] = prompt("친구 이름을 입력하세요");
+		}
+		alert("친구 수 : "+cnt+", 친구 이름 : "+friends);
+	</script>
+	<script>
+		/*보너스*/
+		var type = prompt("직급을 입력하세요");
+		var Bonus = 2000000;
+		var rate = 0;
+		switch(type){
+			case '이사':
+				rate = 1;
+				break;
+			case '부장':
+				rate = 1.5;
+				break;
+			case '차장':
+				rate = 2;
+				break;
+			case '과장'||'대리'||'사원':
+				rate = 3;
+				break;
+		}
+		alert(type+" : "+Bonus*rate);		
+	</script>
+	<script>
+		/*마라톤*/
+		
+	</script>
+</body>
+</html>

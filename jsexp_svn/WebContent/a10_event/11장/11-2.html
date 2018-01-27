@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var header = document.getElementById('header');
+
+            // 이벤트를 연결합니다.
+            function whenClick() { 
+            	// this라는 것은 현재 이 함수를 호출하는 객체를 지정..
+            	alert(this.innerHTML+'CLICK(함수 호출!!)'); 
+            }
+			// 특정한객체.on이벤트내용 = 이벤트가 발생시 처리할 함수.            
+            header.onclick = whenClick;
+        };
+    </script>
+</head>
+<body>
+	<h1 id="header">안녕하세요..</h1>
+</body>
+</html>

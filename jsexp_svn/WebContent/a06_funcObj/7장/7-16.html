@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 생성자 함수를 선언합니다.
+        function Rectangle(w, h) {
+            // 변수를 선언합니다.
+            var width = w;
+            var height = h;
+
+            // 메서드를 선언합니다.
+            this.getWidth = function () { return w; };
+            this.getHeight = function () { return h; };
+            this.setWidth = function (w) {
+                if (w < 0) {
+                    throw '길이는 음수일 수 없습니다.';
+                } else {
+                    width = w;
+                }
+            };
+
+            this.setHeight = function (h) {
+                if (w < 0) {
+                    throw '길이는 음수일 수 없습니다.';
+                } else {
+                    height = h;
+                }
+            };
+        }
+
+        Rectangle.prototype.getArea = function () {
+            return this.getWidth() * this.getHeight();
+        };
+    </script>
+    <script>
+        // 생성자 함수를 선언합니다.
+        function Square(length) {
+        	// 상속 처리..
+            this.base = Rectangle;
+            this.base(length, length);
+        }
+
+        Square.prototype = Rectangle.prototype;
+        Square.prototype.constructor = Square;
+        var sq01 = new Square(5);
+        // 상위 클래스에서 구현되어 있는 메서드를 활용할 수 있다..
+        alert("면적:"+sq01.getArea());
+       	
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

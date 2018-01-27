@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var header = document.getElementById('header');
+
+            // 이벤트를 연결합니다.
+            header.onclick = function () {
+                alert('클릭');
+
+                // 이벤트를 제거합니다.
+                // 이벤트 제거 방법1
+                // 객체.on이벤트명 = null
+                header.onclick = null;
+                // 이벤트 호출 후, 재 호출이 안된다..
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header">Click</h1>
+</body>
+</html>

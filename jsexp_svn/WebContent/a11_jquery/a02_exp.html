@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+/*
+# 연습예제1
+# 연습예제2
+1. 사원명, 사번으로 테이블로 리스트 처리를 하고.. 5명정도
+2. <h1>홀수/짝수</h1> 클릭시, 홀수/짝수 row의 배경색상으로 변경처리.
+3. <h1>제비뽑기 당첨</h1>
+	랜덤으로 해당 사원명의 사번의 배경색상과 글자 색상을 변경하여 출력 처리..
+ 
+ */
+$(document).ready(function () {
+	$("tr:eq(0)").css({"color":"orange","backgroundColor":"purple"});
+});
+function chColor(){
+	$(".data:even").css("backgroundColor","yellow");
+	$(".data:odd").css("backgroundColor","pink");
+}
+function chRandom(){
+	var ranIdx=parseInt( Math.random()*$(".data").size() );
+	
+	$(".data").eq(ranIdx).css({"color":"yellow","backgroundColor":"blue"});
+	
+}
+</script>
+</head>
+<body>
+<h1>사원 리스트</h1>
+<h1 onclick="chColor()">홀수/짝수</h1>
+<h1 onclick="chRandom()">제비뽑기 당첨</h1>
+
+<table border>
+    <tr><th>사원명</th><th>사번</th></tr>
+    <tr class="data"><td>홍길동</td><td>C11111</td></tr>
+    <tr class="data"><td>이영희</td><td>C22222</td></tr>
+    <tr class="data"><td>조혜선</td><td>C33333</td></tr>
+    <tr class="data"><td>신미영</td><td>C44444</td></tr>
+    <tr class="data"><td>오영혜</td><td>C55555</td></tr>
+
+</table>
+
+</body>
+</html>

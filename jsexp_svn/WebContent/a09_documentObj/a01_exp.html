@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+  연습문제.
+ 1. 테이블 형식으로 물건명, 가격과 갯수 등록하면,
+ 	최종 계산서를 출력 처리하는 화면을 구현해보자..
+ 
+ */	
+window.onload=function(){
+	// 모든 가격/갯수은 default "0"으로 입력 처리.
+	var inputs = document.querySelectorAll("input[type=text]");
+	for(var idx=0;idx<inputs.length;idx++){
+		inputs[idx].value="0";
+		// 숫자정렬을 오른쪽  text-align
+		inputs[idx].style.textAlign="right";
+	}
+}
+function calcu(){
+	var pnames=document.querySelectorAll(".pname");
+	var prices=document.querySelectorAll("input[name=price]");
+	var cnts=document.querySelectorAll("input[name=cnt]");
+	var calcu='';
+	var tot=0;
+	var sum=0;
+	for(var idx=0;idx<pnames.length;idx++){
+		calcu+="<h1>"+pnames[idx].innerHTML+",";
+		calcu+=prices[idx].value+",";
+		calcu+=cnts[idx].value+",";
+		// parseInt(), Number() 하여야 되나 *는 허용
+		sum=prices[idx].value*cnts[idx].value;
+		tot+=sum;
+		calcu+=sum+"</h1>";
+	}
+	calcu+="<h1>총계:"+tot+"</h1>";
+	document.querySelector("#show").innerHTML=calcu;
+
+}
+</script>
+</head>
+<body>
+<h1 align="center">물건 계산처리..</h1>
+<table  align="center" border>
+	<tr><th>물건명</th><th>가격</th><th>갯수</th></tr>
+	<tr><td class="pname">사과</td>
+		<td><input type="text" name="price"/></td>
+		<td><input type="text" name="cnt" size="3"/></td></tr>
+	<tr><td class="pname">바나나</td>
+		<td><input type="text" name="price"/></td>
+		<td><input type="text" name="cnt" size="3"/></td></tr>
+	<tr><td class="pname">딸기</td>
+		<td><input type="text" name="price"/></td>
+		<td><input type="text" name="cnt" size="3"/></td></tr>
+	<tr><td colspan="3" style="text-align:center;">
+		<input type="button" value="계산서 발급"  onclick="calcu()"/>
+	</td></tr>
+</table>
+<div id="show">
+</div>
+</body>
+</html>

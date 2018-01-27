@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ *
+## 과제 1
+1. 최신 영화들이란 이름의 배열을 영문으로 선언!
+2. 단위 객체 속성 : 영화명, 분류(액션/드라마/역사), 개봉일, 관객수
+               관람료
+3. 배열을 3개 정도 데이터를 입력..
+4. 정렬기준..sort()
+    0) 영화명 기준
+	1) 관객수   정렬
+	2) 관람료 기준으로 정렬
+*/
+window.onload=function(){
+		var movieList=[];
+		var show="";
+		movieList.push({name:"1987",kind:"역사드라마",open:"2017/07/27",count:270000,pay:12000});	
+		movieList.push({name:"코코",kind:"판타지영화/미스테리",open:"2017/07/28",count:260000,pay:13000});	
+		movieList.push({name:"신과함께",kind:"역사드라마",open:"2017/07/27",count:250000,pay:85000});	
+		var order01=movieList.sort();
+		// 영화명 기준
+		
+		for(var idx=0;idx<order01.length;idx++){
+			movie = order01[idx];
+			alert(movie.name+":"+movie.kind+":"+movie.open+":"+movie.count+":"+movie.pay);
+		}
+
+		var order02=movieList.sort(function(movie1, movie2){
+							return movie1.count-movie2.count});
+		//관객수 기준
+		for(var idx=0;idx<order02.length;idx++){
+			movie = order02[idx];
+			alert(movie.name+":"+movie.kind+":"+movie.open+":"+movie.count+":"+movie.pay);
+		}
+		var order03=movieList.sort(function(movie1, movie2){
+				return movie1.pay-movie2.pay});
+		//관람료 기준
+		for(var idx=0;idx<order03.length;idx++){
+			movie = order03[idx];
+			alert(movie.name+":"+movie.kind+":"+movie.open+":"+movie.count+":"+movie.pay);
+		}		
+};
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

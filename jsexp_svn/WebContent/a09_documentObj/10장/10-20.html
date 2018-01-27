@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        window.onload = function () {
+            // 문서 객체를 가져옵니다.
+            var header1 = document.querySelector('#header-1');
+            var header2 = document.querySelector('#header-2');
+            
+            // 문서 객체의 속성을 변경합니다.
+            header1.innerHTML = '굳!! 데이';
+            header2.innerHTML = 'good day!!';
+            // class에 대한 접근..
+        	// document.querySelectorAll(".클래스명")    
+            var title01 = document.querySelectorAll(".title01");
+            title01[0].innerHTML="행복한 맨!!";
+            title01[1].innerHTML="행복한 걸!!";
+            
+            // tag에 대한 접근..
+            // document.querySelectorAll("태그명")
+            var inputs = document.querySelectorAll("input");
+            inputs[0].value="Gut ten tag!!";
+            inputs[1].value="Good morning!!!!";
+            inputs[2].value="봉 주르!!!!!";
+            var text = document.querySelector("input[type=text]");
+            text.value="Good evening!!";
+
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header-1">Header</h1>
+    <h1 id="header-2">Header</h1>
+    <h2>하이 맨!!</h2>
+    <h2  class="title01">하이 맨!!</h2>
+    <h2  class="title01">하이 맨!!</h2>
+    <h2>하이 맨!!</h2>  
+    <input type="button" value="안녕하세요1"/><br>
+    <input type="text" value="안녕하세요2"/><br>
+    <input type="button" value="안녕하세요3"/><br>
+    
+              
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    	//함수();
+        // 변수를 생성합니다.
+        var 함수 = function () {
+            var output = prompt('숫자를 입력해주세요.', '숫자');
+//           alert(output);
+			return output;
+        };
+        // 출력합니다.
+        //alert(함수); // 함수 코드를 출력 처리.
+        //alert( 함수() ) ;// 함수명() :함수를 수행 처리 한다.
+ /*
+ 익명함수란 : var 변수명 = function(){처리할 내용};
+ 형식으로 변수형함수를 말한다.
+ 1. 반드시, 선언한 후에  '변수명();'으로 호출하지 않으면 수행되지 않는다.
+ 2. 구성요소
+ 	1) 입력값
+ 	   = function ( 입력값1, 입력값2){}
+ 	2) 처리할 프로세스
+ 		= function(){ 처리할 내용..   }
+ 	3) 입력값 + 처리할 프로세스의 결과물로 return  처리.
+ 		= function(){
+ 		
+ 		   return @@@;
+ 	     }
+ */       
+      	var plus = function(num01, num02){
+	 		alert(num01+" + "+num02+ " = ?");
+	 		return num01+num02;
+        };
+        var result= plus(5,7);
+        alert("결과값은 "+result);
+ 		
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

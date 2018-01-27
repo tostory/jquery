@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var student = {
+            name: '윤명월',
+            grade: '대학교 1학년',
+            /*toString() 메서드 참조만 호출할 때,
+            나타날 문자열에 대한 처리를 포함하고, 
+            그래서,  명시적으로 toString()메서드를 호출하지 않더라도
+            해당 return 값을 처리한다.
+            */
+            toString: function () {
+                return this.name + ' : ' + this.grade;
+            }
+       
+        };
+
+        // 출력합니다.
+        alert(student);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

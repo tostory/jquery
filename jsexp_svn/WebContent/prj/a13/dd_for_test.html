@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			
+			/*
+				배열과 조건 반복 연습 예제
+				1. 가장 친한친구 이름을 입력 받아서..
+				아래형식으로 출력처리..
+					prompt, 배열데이터 할당.
+					1)친구 수를 입력?
+					2)수만큼 이름을 입력 처리..
+					3)## 배열에 할당
+					4) alert()으로 가장 친한 친구 @@명 @@@@, @@....
+				2.직급에 따라서 보너스를 차등 지급하기로 햇다.
+					수당기본액 2,000,000원
+					이사: 100%,
+					부장: 150%,
+					차장: 200%,
+					과장/대리/사원 300%
+					해당 조건에 따라서 기본액에서 보너스를 계산해서 출력하세요.
+					입력: 당신의 직책입력하세요.
+				3. 내한 마라톤 1억을 상금액으로 걸고, 1등~~~1만원 미만 나머지 다 지급
+					1등 - 남은 상금액의 1/2씩... 5000
+					2등 - 2500
+			*/
+
+			//1번
+			var friendNum = Number(prompt('친구수를 입력하세요'));
+			var friendNameWrap = new Array();
+			
+			for(var name = 0; name < friendNum ; name++){
+				var friendName = prompt('친구 이름을 입력하세요');
+				friendNameWrap.push(friendName);
+			}
+			alert('가장 친한 친구 '+friendNum+' 명 / '+friendNameWrap);
+			console.log(friendNameWrap)
+			
+			//2번
+			var money = 2000000;
+			var position = prompt('당신의 직책을 입력하세요');
+			var bonus = money*0.1;
+
+			if(position=='이사'){
+				i = bonus*10
+
+			}else if(position=='부장'){
+				i = bonus*15
+
+			}else if(position=='차장'){
+				i = bonus*20
+
+			}else{
+				i = bonus*30
+				
+			}document.write('당신의 직책은 '+ position+'이고, 당신의 보너스는 '+i+' 입니다.');
+
+			//3번
+			//???
+
+		</script>
+	</head>
+	<body>
+		<h1>start!</h1>
+	</body>
+</html>

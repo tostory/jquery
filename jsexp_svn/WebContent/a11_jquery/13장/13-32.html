@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .high-light {
+            background: yellow;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+        	// jquery에서는 index로 개별내용을 변경(eq(index))할 수 있을 뿐만아니라.
+        	//  전체를 한번에 변경도 가능하다.
+        	//$('h1').html("모두다 안녕!!");
+        	// # 클래스 적용..
+        	// 1. css 클래스를 선언..
+        	// 2. addClass("css에서 선언된 클래스명")
+        	// 3. 해당 객체는 css를 적용하여 처리된다.
+            $('h1').addClass('high-light');
+        });
+    </script>
+</head>
+<body>
+    <h1>item - 0</h1>
+    <h1>item - 1</h1>
+    <h1>item - 2</h1>
+    <h1>item - 3</h1>
+    <h1>item - 4</h1>
+</body>
+</html>

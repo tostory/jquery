@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+        	// filter()를 통해서 1차적으로 해당 객체를 index 값으로 
+        	//  필터링한 후에 css내용을 처리할 때, 활용된다.
+            $('h3').filter(function (index,item) {
+            	// index와 각 개별 객체의 속성이나 label내용을 filter처리가
+            	// 가능하다.
+            	//alert($(item).html());
+                return index % 3 == 0;
+            }).css({
+                backgroundColor: 'black',
+                color: 'white'
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Header-0</h3>
+    <h3>Header-1</h3>
+    <h3>Header-2</h3>
+    <h3>Header-3</h3>
+    <h3>Header-4</h3>
+    <h3>Header-5</h3>
+</body>
+</html>

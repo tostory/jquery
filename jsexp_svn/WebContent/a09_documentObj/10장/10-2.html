@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INDEX</title>
+    <script>
+    // window.onload를 반드시 해야지 body안 있는 객체들을 인식할 수 있다.
+        window.onload = function () {
+        	// tag가 선언되어 일때, 해당 tag객체를 가져오는 방식
+        	// 1. tagName 
+        	// 2. id값으로
+        	//    속성으로 id='id명'
+        	//    document.getElementById("정의한 id명")
+        	// 3. class명으로 
+            var header = document.getElementById('header');
+        	alert("header부분의 textnode를 변경처리..")
+        	header.innerHTML="안녕하세요!!";
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header">HEADER</h1>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+/*
+
+# 연습예제3
+모두의 마블 게임
+ 
+ */
+$(document).ready(function () {
+   $("table").attr({align:"center",width:"300pt",height:"300pt"});
+   $("td").css({"text-align":"center","width":"25%","height":"25%"});
+   var curNum=0;
+   $("#num01").click(function(){
+	   $("td").css("background","");
+	   var gameNum01=parseInt(Math.random()*6)+1;
+	   var gameNum02=parseInt(Math.random()*6)+1;
+	   var sum=gameNum01+gameNum02;
+	   $(this).html("주사위1:"+gameNum01+"<br>주사위2:"+gameNum02+"<br>"
+			   +"계"+sum);
+	   curNum+=sum;
+	   // 반복으로 처리.
+	   curNum=curNum%13+1;
+	   $("#no"+curNum).css("background","yellow");
+	   
+   });
+});
+
+</script>
+</head>
+<body>
+<h1 align="center">모두의 마블</h1>
+
+<table border>
+    <tr><td id="no7">7</td><td id="no8">8</td><td id="no9">9</td><td id="no10">10</td></tr>
+    <tr><td id="no6">6</td><td id="num01" colspan="2" rowspan="2">주사위 굴리기</td><td id="no11">11</td></tr>
+    <tr><td id="no5">5</td><td id="no12">12</td></tr>
+    <tr><td id="no4">4</td><td id="no3">3</td><td id="no2">2</td><td id="no1">1</td></tr>
+    
+</table>
+
+</body>
+</html>

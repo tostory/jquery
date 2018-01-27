@@ -1,0 +1,45 @@
+안녕하세요. 홍은정입니다.
+저는 웹 퍼블리셔이고, 자바스크립트는 초급 정도의 레벨입니다.
+
+[사전평가 (html)]
+1. 태그, 속성, 요소
+2. block 형식 - div / ul
+   inline 형식 - span / strong
+3. ul은 일반적인 리스트 나열할때 사용하는 
+태그이며 ol은 순서가 있는 리스트 나열할때 사용하는 태그이다.
+4. 페이지 이동의 기능을 한다.
+5. src=""
+6. 열(가로)을 합칠때 사용한다  (예를 들어, 열이 2개인것을 하나로 합칠때 rowspan="2"로 사용한다).
+8. 검색창에서 텍스트 입력전에 보이는 미리 텍스트 (텍스트입력시 사라진다)
+9. 2개의 답이 있을경우 radio를 사용하면 1개만 체크가능하고 checkbox는 다중선택이 가능하다.
+11. uppercase
+12. table {border-collapse:collapse; border:1px solid #000}
+13. ex1) li {display:inline-block;}
+    ex2) ul:after {content:""; display:block; clear:both;}
+		 li {float:left}
+14. margin은 내 영역밖에 간격 여백을 잡을때 사용하고 padding은 내 영역내에서 영역을 잡을때 사용한다. padding은 box-sizing:boder-box 속성을 사용하면 영역내에서 여백이 잡힌다
+예를들어 width:500px 일때
+margin:50px => 500px 영역밖으로 50px만큼 간격이 생긴다
+padding:50px; box-sizing:border-box => 500px 안으로 50px만큼 간격이 생긴다.
+
+15. 원 소스로 어떠한 해상도 기기에서도 자연스럽게 줄어들면서 잘 보이게 맞추는 작업이다. (pc / tablet / mobile)
+16.<style></style> / <link rel="stylesheet" href="" />
+17. table th, table td {background:red}
+	table th:nth-child(2n), table td:nth-child(2n) {background:#000}
+20. 공란 (띄어쓰기)
+
+[사전평가 (javascript)] - 스크립트는 기초가 많이 부족한 상태입니다..
+1.<script type="text/javascript" src=""></script>
+2. console.log('abc');
+3. var person;
+4. var names=[];
+5. var title01 = $('h1');
+6. break를 만나면 반복문이 중단되고 외부로 나가고 / continue는 반복문이 계속 돈다.
+7. alert();
+8. document.write();
+16. var name = ["은정1","은정2","은정3"]
+19. push는 요소를 밖으로 빼내는거고 pop은 들어오는거다.
+
+[수업진행 요구사항]
+- 웹퍼블리셔로 일을하고있지만, 스크립트 작업을 프로젝트 실무에서 해본 경험이 없어서 많이 부족합니다.
+그래서 많이 배워가고싶습니다! 마이크를 사용해서 강의해주시면 더욱 귀에 쏙쏙 잘 들어올것같습니다~^^

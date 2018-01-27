@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 1초마다 함수를 실행합니다.
+ /*
+ 1. 반복 처리 :setInterval(반복할함수, 반복할시간1/1000)
+ 2. 반복되는 내용 중단 처리..
+ 	1) setInterval() 함수를 변수에 할당..
+ 		var inter01 = setInterval(...)
+    2) clearInterval(함수의 할당되 변수);
+    	clearInterval( inter01 );
+ 
+ */       
+        
+ 	window.onload=function(){
+	 	/*
+        var intervalID = setInterval(function () {
+        	document.body.innerHTML='<p>' + new Date() 
+        	+ '</p>';
+        }, 1000);
+        // 10초 후 함수를 실행합니다.
+        setTimeout(function () {
+            // 타이머를 종료합니다.
+            clearInterval(intervalID);
+        }, 10000);
+       */
+       var int01 = setInterval(countDown,1000);
+       setTimeout(function(){
+    	   clearInterval(int01);
+       },12000) 
+    };
+    var cnt=10;
+    var names=['홍길동','김길동','심길동'];
+    var idx=0;
+    function countDown(){
+    	document.body.innerHTML=
+    		"<h1 align='center'>"+cnt+"</h1>";
+        document.body.innerHTML+=
+        		"<h1 align='center'>"+names[idx++%3]+"</h1>";
+    	cnt--;
+    }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

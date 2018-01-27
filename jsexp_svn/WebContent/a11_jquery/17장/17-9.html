@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 50px; height: 50px;
+            background-color: orange;
+            position: relative;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+ /* 해당 div에 마우스 오버와 마우스 아웃을 통해서 처리할   animate을 선언
+ 	$(객체).animate(객체(left:X축 위치  top:Y축위치),속도)
+ */       	
+            $('div').hover(function () {
+                $(this).animate({
+                    left: 500
+                }, 'slow');
+            }, function () {
+                $(this).animate({
+                    left: 0
+                }, 'slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div><div></div>
+    <div></div><div></div>
+    <div></div><div></div>
+</body>
+</html>

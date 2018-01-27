@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//2. 나이를 입력받아서, 8이상 18이하이면 청소년 요금제 할인률 50%
+//8미만과 65세이상은 무료 100%
+//그외는 요금 전액지불..
+//입장료를 45000  alert창으로 할인율과 할인률이 적용된
+//입장료가 적용 처리..
+var age = Number(prompt("나이를 입력하세요!",'0'));
+var dis = 0.0;
+var pay= 45000;
+var show = "당신의 나이는 "+age+"세 이고, "
+if(age>=8 && age<=18){
+	dis = 0.5;
+}else if( age < 8 || age >= 65 ){
+	dis = 1;
+}else{
+	dis = 0.0;
+}
+// 총금 = 원금 - 할인금(원금*할인률)
+pay =pay - ( pay * dis );
+// 실수 --> % 는 *100처리
+show+="할인율은 "+(dis*100)+"%이고, 지불 입장료는 "+pay+"원 입니다";
+alert(show);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+/*
+# 연습예제1
+1. 로그인화면에서
+	아이디와 패스워드를 입력하는 화면을 나타내고..
+	onSubmit() 이벤트를 통해서..
+	id에는 name값으로 id,
+	 password에는 name값으로 pass설정해서.
+	지정된 id/pass 맞으면, submit()처리되고,
+	그렇지 않으면, 로그인 실패입니다. alert()으로 출력
+
+ 
+ */
+ $(document).ready(function () {
+	
+ });
+ function validate(){
+	 var idVal=$("input[name=id]").val();
+	 var passVal=$("input[name=pass]").val();
+	 
+	 if(idVal=='himan' && passVal=='7777'){
+		 return true;
+	 }else{
+		 alert("인증이 되지 않았습니다!!");
+		 return false;
+	 }
+ }
+</script>
+</head>
+<body>
+<h1>로그인</h1>
+<form onSubmit="return validate()">
+아이디:<input name="id"/><br>
+패스워드:<input name="pass"/><br>
+<input type="submit" value="로그인" />
+</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// setInterval  확인 예제..
+// 0. 사과가 1~10개까지 1초에 1씩을 넣어나는 것을 출력하세요.
+// 1. 사과의 갯수가 3개씩  3초마다 쌓인다고 한다.
+//     3초마다 늘어나는 사과을 갯수를 화면에 출력하세요..
+//     15개되었을 때, 중단처리..
+//    출력 내용:  현재 사과의 갯수 : @@@
+//               시간  :  @@@
+window.onload = function(){
+	/*
+	var cnt=1;
+	var int01 = setInterval(function(){
+		document.body.innerHTML="<h1> 현재 사과 갯수:"+(cnt++)+"</h1>";
+		
+	},1000);	
+	setTimeout(function(){
+		clearInterval(int01);
+	},11000);
+	*/
+	var cnt=1;
+	var appleCnt=0;
+	var int01 = setInterval(function(){
+		document.body.innerHTML="<h1> 현재시간:"
+			+(cnt++)+"초</h1>";	
+		// 첫번째는 제외하고.. 3단위로 나머지연산자 1일..
+		if( cnt!=1 &&cnt%3==1){
+			appleCnt+=3;
+		}
+		document.body.innerHTML+="<h1> 현재사과 갯수:"
+			+(appleCnt)+"개</h1>";
+		// 15 개가 되었을 때, 중단 처리
+		if(appleCnt==15){
+			clearInterval(int01);
+		}
+	},1000);	
+
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

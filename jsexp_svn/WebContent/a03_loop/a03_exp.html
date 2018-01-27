@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* 배열과 조건 반복 연습 예제
+ 1.  가장 친한 친구 이름을 입력 받아서..
+   아래 형식으로 출력 처리..
+     prompt,  배열 데이터 할당.
+     1) 친구 수를 입력?
+     2) 수만큼 이름을 입력 처리..
+     3) ## 배열에 할당
+     4) alert() 으로 가장 친한 친구 @@명 @@@@,@@@....
+ 
+ */
+ var friCnt = Number(prompt("친구수 입력","1"));
+ var names=[];
+ for(var cnt=1;cnt<=friCnt;cnt++){
+	 names.push(prompt(cnt+"번째 친구 입력","이름입력"));
+ }
+ alert(names);
+/*
+  2. 직급에 따라서 보너스를 차등 지급하기로 했다.
+    수당기본액 2000000
+ 	이사 : 100%,
+ 	 부장 : 150%,
+ 	 차장 : 200%
+ 	 과장/대리/사원 300%
+   해당 조건에 따라서 기본액에서 보너스를 계산해서 출력하세요.
+   입력 : 당신의 직책을 입력하세요.. 
+ */ 
+var empGrade = prompt("당신의 직책을 입력하세요!","직책입력");
+var money = 2000000;
+var bonus=0.0  // 과장/대리/사원
+if(empGrade == '이사'){
+	bonus=1.0;
+}else if(empGrade == '부장'){
+	bonus=1.5;
+}else if(empGrade == '차장'){
+	bonus=2.0;
+}else{
+	bonus=3.0;
+}
+alert("입력한 직급은 "+empGrade+"이고, \n보너스는 "+(money*bonus)+"입니다!");
+ 
+ /*
+ 3. 내한 마라톤 1억을 상금액으로 걸고, 1등 ~~~ 1만미만 나머지 
+  1등 - 남은 상금액의 1/2씩... 5000
+  2등 - 2500 
+ */
+var totPay=100000000;
+var num=1;
+var vicPay=0;
+while(totPay>=10000){
+	vicPay=parseInt(totPay/2);
+	totPay-=vicPay;
+	alert(num+"등 상금 "+vicPay+"원 입니다!");
+	num++;
+}
+alert("마지막 상금"+num+"등 "+totPay+"원 입니다!");
+ 
+</script>
+</head>
+<body>
+
+</body>
+</html>

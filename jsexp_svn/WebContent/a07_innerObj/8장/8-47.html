@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+		var cnts =[2,3,4]
+        // 메서드를 사용합니다.
+        // 배열.map(함수) : 각 요소들을 함수가 적용된 새로운 배열로
+        // 만들 줌..
+        var output = array.map(function (element) {
+            return element * element;
+        });
+        var result = cnts.map(function( cnt ){
+        	return cnt*3000;
+        });
+
+        // 출력합니다.
+        //alert(output);
+        alert("물건의 합산 배열:"+result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

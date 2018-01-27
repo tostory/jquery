@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('h1').click(function () {
+                $(this).html(function (index, html) {
+                    return html + '★';
+                });
+            });
+/*
+  trigger(이벤트) : 상단에 이벤트가 정의되고,
+   정의된 이벤트를 해당이벤트로 처리하지 않더라도
+   강제 실행하게끔 하는 처리를 말한다.
+  반드시, 상단에 선언되고, 이후에 호출하여야 한다.
+ 
+ */
+            // 1초마다 함수를 실행합니다.
+            setInterval(function () {
+                $('h1').last().trigger('click');
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <h1>Start: </h1>
+    <h1>Start: </h1>
+</body>
+</html>

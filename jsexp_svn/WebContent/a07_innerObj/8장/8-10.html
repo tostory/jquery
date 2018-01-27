@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Object 객체의 프로토타입에 메서드를 추가합니다.
+        Object.prototype.test = function () {
+            alert(this);
+        };
+        /*
+        모든 객체의 최상위 객체인 Object에 prototype으로 메서드를 
+        지정했을 때, 모든 객체가 해당 메서드를 사용할 수 있게 된다.
+        */
+
+        // Number 객체의 test() 메서드를 호출합니다.
+        var number = 273;
+        number.test();
+        var name="himan";
+        name.test();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+1. 객체의 속성여부
+객체명.hasOwnProperty("속성명")
+2. prototype으로 해당 메서드 추가..
+Object.prototype.test=function(){
+	alert("메서드호출");
+}
+3.문자열을 특정한 문자로 변경..
+해상문자열객체.replace("대상문자열","바꿀문자열");
+4. splice()메서드 기능
+배열의 요소의 지정된 부분을 삭제, 삭제된 요소를 리턴.
+5. Date() 객체의 7일을 더한 날짜의 월/일
+var date = new Date();
+date.setDate( date.getDate() + 7 );
+alert( (date.getMonth()+1)+"월"+ date.getDate()+"일");
+6. 임의의 수(1~6) 까지 정수..
+alert(  parseInt( Math.random()*6 + 1) );
+7. 자바스크립트객체 --> json(속성"")
+var jsonData = JSON.stringfy( person );
+8.  객체의 속성이 수정 불가능 하게 처리하는 내용..defineProperty()
+Object.defineProperty(fruit, 'name', 
+   {value:'사과', writable:false });
+9. 속성을 추가하는 것을 제한..
+ fruit.color="빨강";
+Object.preventExtensions(fruit);
+Object.freeze(fruit)
+10. window객체 활용하여  popup창
+ window.open("http://www.naver.com","width=300,height=200");
+11. DOM객체에서 id, class, 태그 호출하는 코드..
+document.getElementById("아이디명");
+document.getElementsByClassName("클래스명");
+document.getElementsByTagName("태그명");
+document.querySelector("#id명");    
+document.querySelectorAll(".class명");    
+document.querySelectorAll("태그명");    
+12. DOM객체에 css 배경색상을 노랑색으로 처리..
+document.querySelector("#title01").style.backgroudColor="yellow";
+13. id값이  count인  DOM객체
+<h1 id="count">0</h1>
+document.querySelector("#count").onclick=function(){
+	this.innerHTML = parseInt( this.innerHTML)+1; 
+} 
+14. 계층관계에서 이벤트가 중첩될때, 상위 이벤트 처리하지  X
+<div  onclick="event3함수()">
+	<p  onclick="event2함수()">
+		<h1 onclick="event1함수()"> 
+event.stopPropagation()
+15.  jquery 통한 글자색상.
+ $(".items").css("color","orange");
+16. tr 홀수 번index  배경색상처리.
+$("tr:odd").css("backgroundcolor","pink");
+17. 9개 td중에서 임의의 cell  배경색상.
+var ranIdx = parseInt( Math.random()* $("td").size()) ;
+$("td").eq( ranIdx ).css("background","blue");
+18. jquery  
+html("html코드를 적용") <h1>안녕</h1> --h1코드가 적용된 안녕
+text("문자열 html 코드가 적용되지 않는");
+<h1>안녕</h1> --> 태그 코드 자체가 출력..
+append() --> 해당 내용에서 추가해서 처리..
+19. toggle() 
+	show(), hide() 반복적으로 처리..
+20. hover()
+ mouseenter(), mouseleave(). 반복적으로 처리..
+   
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var object = Object.create({}, {
+            name: { value: '윤인성', enumerable: true },
+            age: { value: 28, enumerable: true },
+            region: { value: '서울특별시', enumerable: false }
+        });
+
+        // 출력합니다.
+        // keys():  해당객체의 속성을 return할 때, 리스트형식으로
+        //  출력해준다. 단, 해당 속성의  속성형식 enumerable이 true인 경우
+        //  에만 나열 해준다.
+        alert(Object.keys(object));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

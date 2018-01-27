@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var product = {
+            name: 'Microsoft Visual Studio 2012 Ultimate',
+            price: '15,000,000원',
+            language: '한국어',
+            supportOS: 'Win 32/64',
+            subscription: true
+        };
+
+        // 출력합니다.
+        var output = '';
+/*
+ for문을 통한 속성 처리..
+ for( var  속성명 in 객체){
+	속성명 
+	객체[속성명] :  해당 객체에 할당된 속성값을 호출.. 
+ }
+ */        
+        for (var key in product) {
+            output += '●' + key + ': ' + product[key] + '\n';
+        }
+        alert(output);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

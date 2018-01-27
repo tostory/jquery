@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+        	// .clone()을 하지 않으면, 기존객체의 위치에서 사라지고,
+        	// 해당 객체 위치로 추가된다.
+        	// .clone()을 하면, 기존객체에서도 남아 있고,
+        	// 새로 추가된 위치에서 볼 수 있다.
+            $('div').append($('h1').clone());
+        });
+    </script>
+</head>
+<body>
+    <h1>HEADER</h1>
+    <hr/><div></div><hr/>
+</body>
+</html>

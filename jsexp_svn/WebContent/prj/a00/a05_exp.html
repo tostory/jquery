@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+## 과제3	
+show my family!!
+배열 family
+단위객체..속성값:role, age, name
+우리가족을 소개합니다. 출력..
+아버지  @@  @@@  
+나       @@   @@@
+	
+ */
+window.onload=function(){
+	var family=[];
+	family.push(new Member("아버지","홍판서",55));
+	family.push(new Member("어머니","이정숙",52));
+	family.push(new Member("나","홍길동",28));
+	document.body.innerHTML="";
+	for(var idx=0;idx<family.length;idx++){
+		document.body.innerHTML+="<h1>"+family[idx].print()+"</h1>";
+	}
+	
+} 
+function Member(role,name,age){
+	this.role=role;
+	this.name=name;
+	this.age=age;
+	this.print=function(){
+		return this.role+":"+this.name+":"+this.age;
+	}
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .reverse {
+            background: black;
+            color: white;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            // 객체.hover(함수1, 함수2);
+            // 함수1 : 마우스를 위치시켰을때, 처리한 내용
+            // 함수2 :  마우스의 커서를 벗어 났을 때, 처리할 내용
+            $('h1').hover(function () {
+            	
+                $(this).addClass('reverse');
+            }, function () {
+                $(this).removeClass('reverse');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+</body>
+</html>

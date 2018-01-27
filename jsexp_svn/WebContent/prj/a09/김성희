@@ -1,0 +1,151 @@
+안녕하세요.
+저는 퍼블리셔로 일하고 있고
+자바스크립트는 초급 레벨입니다.
+감사합니다.
+
+
+1. html의 핵심 element 구성 요소 3가지를 기술하세요
+> head, body
+
+2. html의 블럭형식 tag, 인라인형식 tag 각 1가지씩 기술하세요
+> 블럭형식 tag <div></div>
+> 인라인형식 tag <span></span>
+
+3. ul와 ol의 차이를 기술하세요.
+> 목록 리스트 표현 tag 로써, ol은 번호가 출력됩니다.
+
+4. a href 태그는 어떤 기능을 하는가 기술하세요
+> 링크 이동
+
+5. img 태그에서 해당 이미지를 지정하는 속성을 기술하세요.
+> src
+
+6. table에서 td의 속성값 중, rowspan이 의미하는 바는 무엇인가?
+> 행 병합
+
+7. form에서 action 속성값의 의미를 기술하세요
+> 값을 처리할 서버 주소
+
+8. form 하위  태그(element) 속성 중, placeholder는 어떠한 경우에 활용되는가?
+> 값은 아니지만, 사용자가 입력하기 전에 기본적으로 보이는 문자
+
+9. form 하위  태그(element) 중, radio와 checkbox의 차이를 기술하세요
+> radio : 여러 개 중 하나만 선택
+> checkbox : 중복 선택
+
+10. iframe에서 name의 활용 기능을 기술 하세요
+> iframe을 컨트롤할 수 있는 이름
+
+11. css에서 h1 태그의 문자열을 대문자로 변환하는 속성을 속성값을 선언하세요
+> upcase
+
+12. css에서 table, th, td에 border를 합치고, 굵기는 1px, 단일행, 색상은 검정색 설정을 할려고 한다. css를 기술하세요
+> 
+<table style="border:1px solid black;">
+	<tr>
+		<th></th>
+	</tr>
+</table>
+
+13. ul, ol 하위에 있는 li들을 수평으로 정렬시키는 css 속성과 속성값을 기술하세요!
+> <li style="display:inline-blcok">
+
+14. css 속성 중,  margin과 padding의 차이점을 기술하세요
+> margin 은 블럭의 바깥 여유공간
+> padding 은 블럭의 내부 여유공간
+
+15. 반응형 웹 디자인(responsive web design)이란 무엇을 말하는가?
+> 하나의 소스로 다양한 디바이스에서 보여지는 디자인
+
+16. css의 선언 형태 3가지를 기술하세요
+> <link rel ~>
+> <style></style>
+> @import
+
+17. table에서 라인별(홀수행/짝수행) 배경색상을 다르게 처리 할려고 한다. 코드를 기술하세요
+> tr:nth-child(even), tr:nth-child(odd)
+
+18. 해상도별로 나타나는 imge를 다르게 구현 할려고 한다. tag와 주요 속성값을 기술하세요
+> @media query min-width(){}
+
+19. 동일한 image에서 위치 별로 다른 link를 구현 할려고 한다. tag와 속성값을 기술하세요.
+> 이미지맵 <map></map>
+
+20. &nbsp;가 의미하는 것을 기술하시오
+> 빈공간
+
+=====================================================
+
+1. 외부파일 호출 처리부분을 기술하세요
+> <script src="외부파일주소"></script>
+
+2. 콘솔에 출력하는 처리 내용
+> console.log("내용");
+
+3. 객체형 변수 person 초기 선언을 하세요
+> var person = {};
+
+4. 배열형 변수 names 초기 선언을 하세요
+> var names = [];
+> var names = new Array;
+
+5. h1 element를 변수 title01에 저장하는 코드를 기술하시오.
+> var title01 = document.querySelector("h1");
+
+6. 반복문에서 break와 continue의 차이점을 기술하세요.
+> 순환할 때 break를 만나면 순환을 빠져나오고, continue를 만나면 그 구간만 스킵하고 순환을 계속함
+
+7. 윈도우 popup창에서 이 창을 띄운 창을 지칭할 때, 처리하는 객체명
+
+
+8. 해당 elements의 text내용을 변경하기 위한 키워드를 기술하세요
+> document.querySelector('element').innerHTML = '';
+
+9. 프레임의 상하로 나누고 첫번째 프레임의 이름을 지정하세요
+
+10. a link를 통해 특정 iframe이나 frame으로 "a01_con.html"로 할당 할려고 한다. keyword를 기술하세요 (프레임 이름 : frame01)
+
+11. isNaN() 함수가 뜻하는 바를 기술하세요!
+> 숫자가 아닌 값을 받을 때
+
+12. person에서 속성값 name, age, loc일 할당된 객체를 기술하세요.
+> var person = {};
+> person.name = '';
+> person.age = '';
+> person.loc = '';
+
+13. car instanceof Object가 의미하는 바를 기술하시오.
+> car는 Object 클래스의 객체
+
+14. var d = new Date()에서 날짜를 오늘의 기준으로 3일 후를 변수 d에 저장 할려고 한다, 코드를 기술하세요
+
+15. "use strict"가 의미하는 바를 기술하시오.
+> 엄격한 문법
+
+16. 이름3개를 배열에 할당하고, for(in)구문으로 alert 출력하세요
+>var names =['a','b','c'];
+>for(var p in names){
+alert(names[p]);
+}
+17. setInterval과 setTimeout의 차이점을 기술하시오.
+
+18. <p>This is a paragraph.</p> 태그와 동일하게 DOM객체를 통해서 생성해서 body 추가하세요
+
+19. 배열 객체에서 push와 pop의 차이를 기술하시오.
+> push는 원소를 마지막에추가, pop은 첫번째 원소를 삭제
+
+20. BOM 이 뜻하는 것을 기술하세요.
+> 브라우저에 관련된 요소
+
+
+========================================================
+수업진행 요구사항
+
+1. 실무에선 플러그인을 여럿 가져오거나, 외부에서 작성한 소스를 가져와 붙이는 일이 많아서,
+소스가 스파게티 소스가 되는 일이 많습니다.
+소스를 최적화 하는 방법을 알고 싶습니다.
+
+2. 플러그인 다큐먼트를 보는 방법과, 간단한  플러그인을 만다는 방법을 배우고 싶습니다.
+
+감사합니다.
+======================================================== 

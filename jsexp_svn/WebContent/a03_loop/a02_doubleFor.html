@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 확인예제
+	// 2중  for문으로 구구단을 출력처리..
+	// 화면을 body의 끝까지 인식한 후에 처리..
+	window.onload=function(){
+		var show="";
+		for(var grade=2;grade<=9;grade++){
+			show+="<h1 align='center'>"+grade+"단</h1>";
+			for(var cnt=1;cnt<=9;cnt++){
+				// 2 * 1 = 2
+				show+="<h2 align='center'>"
+					+grade+" * "+cnt+" = "+(grade*cnt)
+					+"</h2>";
+			}
+		}
+		document.body.innerHTML=show;		
+		
+	};	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

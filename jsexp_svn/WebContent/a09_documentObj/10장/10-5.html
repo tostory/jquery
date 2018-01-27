@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INDEX</title>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            // body부분에 정의되지 않았을 때, javascript로..
+            // 객체를 생성해서 해당 body 부분에 추가할 때 활용된다.
+            // 1. 객체 생성..
+            //    document.createElement("태그명")를 통해 객체
+            // 2. 생성된 객체에 변수명으로 할당.
+            // 3. 하위 객체 만들기..
+            //    1) 레이블 내용을 만드는 객체..
+            //       document.createTextNode("표시할 문자열..")
+            // 4. 상하위 객체를 연결처리..
+            //    1) 상위 객체명.appendChild( 하위객체명 )
+            
+            var header = document.createElement('h1');
+            var textNode = document.createTextNode('Hello DOM');
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

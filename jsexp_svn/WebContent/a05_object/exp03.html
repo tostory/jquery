@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+  좋아하는 차 배열 만들기.
+  1. car객체 
+  	1) 속성 : 이름, 배기량, 최고속도, 순간가속량(0~100 7초)
+  	객체 3개를 배열객체에 담고..
+  	2) 반복문을 통해서 화면에
+  	       내가 좋아하는 차 3종~~~
+  		차종   배기량   최고속도   순간가속량
+ 
+ */
+ 	window.onload=function(){
+  		var farvorCars=[];
+  	  	farvorCars.push({name:"재규어",cc:5000,maxVel:260,timeacc:6});
+  	  	farvorCars.push({name:"소나타",cc:2800,maxVel:220,timeacc:9});
+  	  	farvorCars.push({name:"그렌저",cc:3500,maxVel:240,timeacc:8});
+  	  	//alert(farvorCars.length);
+  	  	var show="<h1 align='center'>내가 좋아하는 차 3종</h1>";
+  	  	show+="<table align='center' border><tr><th>차종</th>"+
+  	  		"<th>배기량</th><th>최고속도</th><th>순간가속력</th></tr>";
+  	  	for(var idx in farvorCars){
+  	  		show+="<tr><td>"+farvorCars[idx].name+"</td><td>"
+  	  				+farvorCars[idx].cc+"</td><td>"
+  	  				+farvorCars[idx].maxVel+"</td><td>"
+  	  				+farvorCars[idx].timeacc+"</td></tr>";
+  	  	}
+  	  	show+="</table>";
+  	  	document.body.innerHTML=show; 		
+  		
+  	};
+
+  	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

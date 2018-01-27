@@ -1,0 +1,68 @@
+안녕하세요..
+본강의 강사 입니다.
+저는 웹디자이너이고,
+자바스크립트는 초급/중급/고급
+정도 레벨
+## 사전평가 1
+1 ###
+2 @@@
+
+
+## 사전평가 2
+
+
+
+
+
+1. $,_
+2. \
+	alert("안녕\" \"  ")
+	\t :  탭간격
+	\n :  줄바꿈처리..
+3. 7 % 3 ==> 1
+4. true&&true ==> true
+   true||false ==> true
+var isCheckDate = num01>=50 && num01<=60;
+
+5. var tot+=25;
+tot값에서 누적처리 25를 더하여 주라는 뜻..
+6.  typeof( 데이터 )
+7. alert() :  경고, 알림
+   confirm() : bool값(true/false)
+   prompt() : 입력할 문자열
+8. Number("숫자형문자열") ==> 숫자
+   "2"+"4" "24" Number("2")+Number("4") ==>6
+   parseInt(), parseFloat()
+9. 
+   point>=70?"합격":"불합격"
+10. var prodlist=["사과","바나나","딸기","오렌지","수박"];
+    prodlist[2]="자몽";
+    prodlist.length : 배열의 크기..
+11. while(bool) : bool값이 반드시 true일 때만 반복처리.
+    do{
+    	일단 한번은 처리., 반복 조건에 따라 계속여부 확인
+    }while(bool);    
+12. for(var idx=0;idx<prodlist.length;idx++){
+         prodlist[idx]; 
+    }   
+13. break : 모든 loop를 중단..
+    continue :  해단 단위 프로세스 pass
+       
+   
+
+
+
+
+
+
+ 	
+
+
+
+
+
+
+
+
+
+

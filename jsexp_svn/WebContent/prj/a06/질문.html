@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+/*궁금한 것*/
+/*플러스 버튼을 누르면 빨간색이 위로 하나씩 차고 마이너스 버튼을 누르면 빨간색이 아래로 하나씩 떨어집니다.
+그리고 중간에 버튼을 누르면 누른 위치부터 시작해서 아래로 빨간색이 다 차구요 쉽게 이야기 하면 네이버 지도에 확대 축소 컨트롤 바입니다. 버튼 눌러서 이동까지는 알겠는데 중간에 클릭한 값을 기준으로 다시 버튼으로 빼고 더하는 것이 안되네요 
+*/
+body,body *{margin:0px; padding:0px; list-style:none;}
+#selectBar button{display:block; border:1px solid #666; width:20px; height:20px; text-align:center; background-color:#fff; cursor:pointer;}
+	#selectBar ul{}
+	#selectBar li.on button{background:red;}
+	#selectBar li button{background:#eee;}
+</style>
+</head>
+
+<body>
+<div id="selectBar">
+	<button type="button" class="plus">+</button>
+    	<ul class="bar">
+        	<li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+            <li class="on"><button type="button"></button></li>
+        </ul>
+    <button type="button" class="minus">-</button>
+</div>
+</body>
+</html>

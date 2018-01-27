@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+## 과제2	
+1. setInterval과 배열을 활용하고, 
+	Math.random()을 활용하여..
+	임의의 구구단 문제 10문제를 출력
+	function Gugu(@@,@@)
+		속성1 :num01
+		속성2 :num02
+	prototype으로 sum()
+	1초 마다 한문제씩 출력..
+	@@@ * @@ = @@
+	@@@ * @@ = @@
+	@@@ * @@ = @@
+	@@@ * @@ = @@
+*/
+window.onload=function(){
+	var cnt=1;
+	document.body.innerHTML="";
+	var int01= setInterval(function(){
+
+		
+		var num01=parseInt(Math.random()*8+2);
+		var num02=parseInt(Math.random()*9+1);
+		
+		var gu= new Gugu(num01,num02);
+		
+		document.body.innerHTML+="<h2>"+cnt+" )"+gu.call()+"</h2>";
+		if(cnt==10){
+			
+			clearInterval(int01);
+		}
+		cnt++;
+	},1000);		
+			
+}
+function Gugu(num01,num02){
+	this.num01=num01;
+	this.num02=num02;
+	this.call=function(){
+		this.result=this.num01*this.num02;	
+		return this.num01+" * "+this.num02+" = "+this.result;
+	}
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

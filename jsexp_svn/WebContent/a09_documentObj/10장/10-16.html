@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script>
+        window.onload = function () {
+            // 문서 객체를 가져옵니다.
+            var headers = document.getElementsByTagName('h1');
+            // getElementsByTagNames()는 배열 객체로 가져온다.
+            // 배열로 인식때문에, 각각 데이터를 변경할려면, 배열명[index]
+            // 로 접근 해서 변경하여야 한다.
+            headers[0].innerHTML="안녕";
+           	for(var idx=0;idx<headers.length;idx++){
+           		headers[idx].innerHTML=(idx+1)+"즐거운 토요일!!";
+           	}
+        };
+    </script>
+</head>
+<body>
+    <h1>Header01</h1>
+    <h1>Header02</h1>
+</body>
+</html>

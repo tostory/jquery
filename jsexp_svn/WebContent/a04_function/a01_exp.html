@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 함수 확인예제
+//1. 물건명, 가격, 갯수를 매개값으로 받아서...
+//    가격,갯수는 연산을 처리하여..
+//  return 값으로 나타나면,
+//     화면에 출력 내용은 '고객님이  물건 @@@을  @@ 개 구매하셨습니다"
+//        총비용은 @@@ 입니다. 함수 정의..
+	function calcu(pname,price,cnt){
+		var ret = price*cnt;
+		// 출력할 내용
+		alert("고객님이 물건 "+ pname+"을 "+cnt+"개 구매하셧습니다!");
+		return ret;
+    }
+    
+    //alert("총비용은 " + calcu('사과',3000,2) )
+//2. 가변인자를 통해서, 학생의 국어,영어,수학점수를 입력하고,
+//    합계와 평균을  출력 처리하세요..
+	function pointCalcu(){
+    	// [80, 90,70]
+    	var points=arguments;
+    	var tot=0;
+    	for(var idx=0;idx < points.length;idx++){
+    		tot+=points[idx];
+    	}
+    	var avg = tot/points.length;
+    	alert("합계:"+tot+"\n평균:"+avg);
+    }
+    pointCalcu(80);
+    pointCalcu(80,70);
+    pointCalcu(80,80,90);    
+</script>
+</head>
+<body>
+
+</body>
+</html>
