@@ -22,6 +22,13 @@ public class A01_EmpService {
 		}
 		return dao.emplist(sch);
 	}
+	public ArrayList<Emp> empList2(Emp sch){
+		
+		if(sch.getEname()==null){
+			sch.setEname("");
+		}
+		return dao.emplist2(sch);
+	}	
 	public ArrayList<Emp> empList02(Emp sch){
 		return dao.empList02(sch);
 	}

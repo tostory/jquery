@@ -30,9 +30,26 @@
  						 $("div").html( data );
  					 }
  					
- 				});
- 				
+ 				});	
  			});
+ 			$("h2").click(function(){
+ 				$(this).css("background","yellow");
+ 				// 요청값..
+ 				var name=$("input[name=name]").val();
+ 				var age=$("input[name=age]").val();
+ 				var sndData = "name="+name+"&age="+age;
+ 				alert(sndData);
+ 				$.ajax({
+ 					 url:"z02_data.jsp",
+ 					 dataType:"html",
+ 					 type:"post",
+ 					 data:sndData,
+ 					 success:function( data ){
+ 						 $("div").html( data );
+ 					 }
+ 					
+ 				});	
+ 			}); 		
  			
     	});
     </script>
@@ -40,6 +57,7 @@
 <body>
 	<h1>서버에서 html형식으로 데이터 받기.</h1>
 	<h2>서버에서 jsp형식으로 데이터 받기.</h2>
+	<h3>서버에서 json형식으로 데이터 받기.</h3>
 	이름:<input type="text" name="name"/><br>
 	나이:<input type="text" name="age"/><br>
 	<div></div>

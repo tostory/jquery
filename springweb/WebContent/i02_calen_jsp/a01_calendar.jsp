@@ -54,6 +54,8 @@
 					url:"calendar.do?method=list",
 					dataType:"json",
 					success:function( data ){
+						// 서버 DB 단에서 json데이터 처리
+						
 						dteinfo= data.list;
 						loadView();
 					}

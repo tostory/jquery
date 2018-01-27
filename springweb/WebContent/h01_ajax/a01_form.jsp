@@ -14,6 +14,33 @@
 		<script src="${path}/com/jquery-1.10.2.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				$("#ckName").keyup(function(){
+					
+					var sndData="ename="+$(this).val();
+					$.ajax({
+						type:"post",
+						url:"ajax.do?method=jsonList2",
+						dataType:"json", // json형식으로 서버에서 데이터 넘겨올때.
+						data:sndData,
+						success:function(data){
+							var list=data.emplist;
+							var show="";
+							
+							if(list.length>0){
+								show="해당 계정은 등록 할 수 없습니다(X) ";
+							}else{
+								show="해당 계정은 등록할 수 있습니다";
+							}
+
+							$("#ckShow").html(show);
+
+						}
+						
+					});					
+					
+				});
+				
+				
 				$("#ename").keyup(function(){
 					var sndData="ename="+$(this).val();
 					$.ajax({
@@ -51,6 +78,9 @@
 						
 					});
 				});
+				
+				
+				
 			})
 		</script>
 	</head>
@@ -59,8 +89,10 @@
 	<h1>emp ajaxList</h1>
 	이름:<input id="ename" name="ename"/><br>
 	<div id="show">
-	
 	</div>
+	<h2>회원가입여부확인(ajax)</h2>
+	사원등록이름확인:<input id="ckName"/><br>
+	<div id="ckShow"></div>
 	
 	
 

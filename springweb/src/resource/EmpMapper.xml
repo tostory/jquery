@@ -33,6 +33,12 @@
 		select * from emp
 		where ename like '%'||#{ename} ||'%'
 	</select>
+	<select id="emplist2"
+		resultMap="empMap"
+		parameterType="emp">
+		select * from emp
+		where ename = #{ename}
+	</select>	
 	<!-- 
 		id="emplist" ==> dao단에 어떤 메서드와 연결되어 그
 			 dao에 데이터 넘길지를 선언

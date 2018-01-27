@@ -13,7 +13,7 @@ import springweb.z01_dto.Emp;
 public class A01_AjaxCtrl {
 	@Autowired(required=false)
 	private A01_EmpService service;	
-// http://localhost:6080/springweb/ajax.do?method=ajaxForm
+// http://localhost:7080/springweb/ajax.do?method=ajaxForm
 	@RequestMapping(params="method=ajaxForm")
 	public String form(){
 		return "h01_ajax/a01_form";
@@ -26,4 +26,12 @@ public class A01_AjaxCtrl {
 		
 		return mav;
 	}
+	@RequestMapping(params="method=jsonList2")
+	public ModelAndView jsonList2(Emp sch){
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("pageJsonReport");// 조립기에 선언한 json viewer
+		mav.addObject("emplist", service.empList2(sch));// view단
+		
+		return mav;
+	}	
 }

@@ -17,6 +17,7 @@ public interface A01_EmpRep {
 //	데이터 결과 처리 ArrayList<VO>
 //	
 	public ArrayList<Emp> emplist(Emp sch);
+	public ArrayList<Emp> emplist2(Emp sch);
 //	return : Emp  입력 : empno(int)
 //	id : empOne
 //	resultType="emp"

@@ -15,6 +15,7 @@
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script>
         $(document).ready(function () {
+        	$( "#draggable" ).draggable();
             // 이벤트를 연결합니다.
             $('#open-button').click(function () {
                 // 해당버튼을 클릭시, dialog가 로딩..
@@ -79,5 +80,9 @@
         <label for="event-date">날짜</label>
         <input id="event-date" type="text" />
     </div>
+    <div id="draggable" class="ui-widget-content">
+     <p>Drag me around</p>
+     </div>   
+    
 </body>
 </html>
